@@ -1,0 +1,45 @@
+* {
+    font-family: var(--font-family) !important;
+    font-size: var(--font-size-normal);
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1,
+h2 {
+    color: var(--accent-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-big);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration-line: underline;
+}
+
+.socials-container > div {
+    margin-top: 10px;
+}
+
+.page-section {
+    border-top: 1px dashed var(--accent-color);
+    border-bottom: 1px dashed var(--accent-color);
+    margin: 15px;
+    padding: 15px;
+}
+
+.page-section-no-border {
+    margin: 5px;
+}
+
+.centered-information {
+    text-align: center;
+}
+
+pre > code {
+    background-color: var(--background-color);
+    font-size: var(--font-size-normal) !important;
+}
