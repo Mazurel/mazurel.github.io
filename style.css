@@ -27,8 +27,23 @@ a {
 .page-section {
     border-top: 1px dashed var(--accent-color);
     border-bottom: 1px dashed var(--accent-color);
-    margin: 15px;
-    padding: 15px;
+    margin-left: var(--section-padding);
+    margin-right: var(--section-padding);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center; /* Vertically centers items */
+}
+
+@media screen and (max-width: 800px) {
+    .page-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.page-section > div {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .page-section-no-border {
