@@ -1,7 +1,8 @@
 :root {
-    --font-color: #4a051c;
-    --accent-color: #b287a3;
-    --background-color: #ebfffb;
+    --font-color: #011936;
+    --accent-color: #5f7e4e;
+    --background-color: #fffcf9;
+    --shadow-color: #01193612;
     --font-family: "Lato", monospace;
     --font-size-normal: 18px;
     --font-size-big: 27px;
