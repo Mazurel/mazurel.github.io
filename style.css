@@ -245,7 +245,7 @@ pre::before {
     top: var(--spacing-sm);
     right: var(--spacing-md);
     font-size: var(--font-size-small);
-    color: #60a5fa !important;
+    color: #7c9a6b !important;
     font-weight: var(--font-weight-medium);
     opacity: 0.7;
 }
