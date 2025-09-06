@@ -1,11 +1,81 @@
 :root {
-    --font-color: #011936;
-    --accent-color: #5f7e4e;
-    --background-color: #fffcf9;
-    --shadow-color: #01193612;
-    --font-family: "Lato", monospace;
-    --font-size-normal: 18px;
-    --font-size-big: 27px;
-    --icon-size: 25px;
-    --section-padding: 175px;
+    /* Modern color palette */
+    --font-color: #2c3e50;
+    --accent-color: #3498db;
+    --accent-color-hover: #2980b9;
+    --background-color: #ffffff;
+    --section-background: #f8f9fa;
+    --border-color: #e9ecef;
+    --shadow-color: rgba(52, 152, 219, 0.1);
+    --code-background: #f4f4f4;
+
+    /* Typography */
+    --font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --font-family-mono: "Source Code Pro", "Fira Code", "Monaco", monospace;
+    --font-size-small: 14px;
+    --font-size-normal: 16px;
+    --font-size-medium: 18px;
+    --font-size-large: 22px;
+    --font-size-big: 32px;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+    --line-height: 1.6;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+    --section-padding: 2rem;
+    --container-max-width: 1200px;
+
+    /* Effects */
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --transition: all 0.3s ease;
+    --box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --box-shadow-hover:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* Icons */
+    --icon-size: 24px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-color: #e2e8f0;
+        --accent-color: #60a5fa;
+        --accent-color-hover: #3b82f6;
+        --background-color: #0f172a;
+        --section-background: #1e293b;
+        --border-color: #334155;
+        --shadow-color: rgba(96, 165, 250, 0.1);
+        --code-background: #2d3748;
+    }
+}
+
+/* Mobile-first responsive breakpoints */
+@media screen and (min-width: 768px) {
+    :root {
+        --font-size-normal: 17px;
+        --font-size-medium: 19px;
+        --font-size-large: 24px;
+        --font-size-big: 36px;
+        --section-padding: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --font-size-normal: 18px;
+        --font-size-medium: 20px;
+        --font-size-large: 26px;
+        --font-size-big: 40px;
+        --section-padding: 4rem;
+    }
 }
